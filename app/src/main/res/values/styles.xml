@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme Styles -->
+    <style name="Theme.Weather.NoActionBar" parent="Theme.Weather">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    
+    <!-- Typography Styles for Minimalist Design -->
+    
+    <!-- Large Temperature Display -->
+    <style name="Weather.Typography.Temperature" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/funneldisplay_family</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">84sp</item>
+        <item name="android:letterSpacing">-0.05</item>
+        <item name="android:fontWeight">120</item>
+    </style>
+    
+    <!-- Weather Condition Text -->
+    <style name="Weather.Typography.Condition" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/funneldisplay_family</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:fontWeight">450</item>
+    </style>
+    
+    <!-- Section Headers -->
+    <style name="Weather.Typography.SectionHeader" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/funneldisplay_family</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontWeight">750</item>
+    </style>
+    
+    <!-- Detail Labels -->
+    <style name="Weather.Typography.DetailLabel" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/funneldisplay_family</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontWeight">500</item>
+    </style>
+    
+    <!-- Detail Values -->
+    <style name="Weather.Typography.DetailValue" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/funneldisplay_family</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontWeight">320</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    
+    <!-- Location Name -->
+    <style name="Weather.Typography.Location" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/funneldisplay_family</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:fontWeight">550</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <!-- High/Low Temperature -->
+    <style name="Weather.Typography.HighLowTemp" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/funneldisplay_family</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontWeight">380</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <!-- Custom Switch Style for Minimalist Design -->
+    <style name="Weather.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="thumbTint">@color/text_primary</item>
+        <item name="switchMinWidth">36dp</item>
+        <item name="android:switchMinWidth">36dp</item>
+        <item name="android:thumbTint">@color/text_primary</item>
+        <item name="android:track">@drawable/switch_track</item>
+        <item name="track">@drawable/switch_track</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="thumbElevation">0dp</item>
+        <item name="trackTint">@null</item>
+        <item name="android:trackTint">@null</item>
+        <item name="trackTintMode">src_atop</item>
+        <item name="android:trackTintMode">src_atop</item>
+    </style>
+</resources>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="today_forecast">Today\'s Forecast</string>
+    <string name="temperature">%1$d°</string>
+    <string name="feels_like">Feels like %1$d°</string>
+    <string name="search_location">Search location…</string>
+    <string name="no_data_available">No weather data available</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="search">Search</string>
+    <string name="refresh">Refresh</string>
+    <string name="location_permission_denied">Location permission denied. Weather data may be less accurate.</string>
+    <string name="use_current_location">Use current location</string>
+    <string name="enter_city">Enter city name</string>
+    <string name="show_more_forecast">MORE</string>
+    <string name="show_less_forecast">LESS</string>
+    <string name="loading">Loading...</string>
+    <string name="location_error">Could not get current location. Using default location.</string>
+    <string name="location_error_with_message">Error getting location: %1$s</string>
+    <string name="location_permission_denied_toast">Location permission denied. Using default location.</string>
+    <string name="current_location">Current Location</string>
+    
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="units">Units</string>
+    <string name="temperature_unit">Temperature Unit</string>
+    <string name="wind_speed_unit">Wind Speed Unit</string>
+    <string name="celsius">Celsius (°C)</string>
+    <string name="fahrenheit">Fahrenheit (°F)</string>
+    <string name="kmh">Kilometers per hour (km/h)</string>
+    <string name="mph">Miles per hour (mph)</string>
+    <string name="ms">Meters per second (m/s)</string>
+    <string name="app_preferences">App Preferences</string>
+    <string name="use_current_location_pref">Use Current Location</string>
+    <string name="weather_alerts">Weather Alerts</string>
+    <string name="daily_forecast">Daily Forecast</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="animations">Animations</string>
+    <string name="locations">Locations</string>
+    <string name="manage_locations">Manage Locations</string>
+    <string name="about">About</string>
+    <string name="app_version">App Version</string>
+
+    <string name="back">Back</string>
+    <string name="notifications">Notifications</string>
+    <string name="default_wind_value">-- km/h</string>
+    <string name="default_pressure_value">-- hPa</string>
+    <string name="default_visibility_value">-- km</string>
+    <string name="default_time_value">--:--</string>
+    <string name="default_humidity_value">--%</string>
+    <string name="default_precipitation_value">--%</string>
+    <string name="default_temp">--°</string>
+    <string name="default_temp_c">--°C</string>
+    <string name="default_temp_f">--°F</string>
+    <string name="default_wind_placeholder">-- %1$s</string>
+    <string name="weather_condition_icon">Weather condition icon</string>
+    <string name="widget_current_location_only">Widget shows current location only</string>
+</resources>

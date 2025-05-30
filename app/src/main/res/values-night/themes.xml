@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Weather" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/text_primary</item>
+        <item name="colorPrimaryVariant">@color/text_secondary</item>
+        <item name="colorOnPrimary">@color/amoled_black</item>
+        
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/accent_blue</item>
+        <item name="colorSecondaryVariant">@color/accent_blue</item>
+        <item name="colorOnSecondary">@color/amoled_black</item>
+        
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation bar color. -->
+        <item name="android:navigationBarColor">@color/amoled_black</item>
+        
+        <!-- Background color. -->
+        <item name="android:windowBackground">@color/amoled_black</item>
+        
+        <!-- Text appearances. -->
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Weather.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Weather.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Weather.HeadlineSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Weather.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Weather.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Weather.BodySmall</item>
+        
+        <!-- Material 3 components styling -->
+        <item name="materialCardViewStyle">@style/Widget.Weather.CardView</item>
+    </style>
+</resources>

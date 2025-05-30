@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base theme colors - Pure AMOLED black for true minimalism -->
+    <color name="amoled_black">#000000</color>
+    
+    <!-- Card Colors - Subtle depth with minimal contrast -->
+    <color name="card_background">#0D0D0D</color>
+    <color name="card_background_alt">#141414</color>
+    <color name="status_bar_color">#000000</color>
+    <color name="toolbar_color">#000000</color>
+    
+    <!-- Text Colors - Clean hierarchy with carefully balanced opacity -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#CCCCCC</color>
+    <color name="text_tertiary">#999999</color>
+    <color name="text_disabled">#66FFFFFF</color> <!-- 40% opacity -->
+    
+    <!-- Icon colors - Consistent with text for visual harmony -->
+    <color name="icon_tint">#FFFFFF</color>
+    <color name="icon_tint_secondary">#CCCCCC</color> <!-- Matching text_secondary -->
+    
+    <!-- Accent color for highlights and interactive elements -->
+    <color name="accent">#4285F4</color> <!-- Google Blue -->
+    
+    <!-- Accent colors - Subtle, desaturated tones for elegant minimalism -->
+    <color name="accent_blue">#78A5FF</color>
+    <color name="accent_green">#7AD8A0</color>
+    <color name="accent_yellow">#FFD07F</color>
+    <color name="accent_orange">#FFA07A</color>
+    <color name="accent_red">#FF8585</color>
+    <color name="accent_purple">#BF9AFF</color>
+    
+    <!-- Weather condition colors - all monochromatic -->
+    <color name="sunny_color">#FFFFFF</color>
+    <color name="cloudy_color">#FFFFFF</color>
+    <color name="rainy_color">#FFFFFF</color>
+    <color name="stormy_color">#FFFFFF</color>
+    <color name="snowy_color">#FFFFFF</color>
+    
+    <!-- Air quality index colors - monochromatic -->
+    <color name="air_quality_good">#FFFFFF</color>
+    <color name="air_quality_moderate">#CCCCCC</color>
+    <color name="air_quality_hazardous">#999999</color>
+    
+    <!-- Time-based colors - monochromatic with subtle variations -->
+    <color name="dawn_start">#1A1A1A</color>
+    <color name="dawn_mid">#333333</color>
+    <color name="dawn_end">#4D4D4D</color>
+    
+    <!-- Day colors -->
+    <color name="midday_start">#666666</color>
+    <color name="midday_mid">#808080</color>
+    <color name="midday_end">#999999</color>
+    
+    <!-- Sunset colors -->
+    <color name="sunset_start">#808080</color>
+    <color name="sunset_mid">#4D4D4D</color>
+    <color name="sunset_end">#333333</color>
+    
+    <!-- Night colors -->
+    <color name="twilight_start">#262626</color>
+    <color name="twilight_mid">#0D0D0D</color>
+    <color name="twilight_end">#000000</color>
+    
+    <!-- Base Colors -->
+    <color name="dark_gray">#121214</color>
+    <color name="medium_gray">#1A1A1C</color>
+    <color name="light_gray">#28282A</color>
+    <color name="very_light_gray">#36363A</color>
+    
+    <!-- Material3 required colors for system integration -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

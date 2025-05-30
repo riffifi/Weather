@@ -55,6 +55,10 @@ public class HourlyForecastAdapter extends RecyclerView.Adapter<HourlyForecastAd
             temperatureTextView = itemView.findViewById(R.id.temperatureTextView);
             weatherIconImageView = itemView.findViewById(R.id.weatherIconImageView);
             precipitationTextView = itemView.findViewById(R.id.precipitationTextView);
+            //timeTextView = itemView.findViewById(R.id.view_TimeText);
+            //temperatureTextView = itemView.findViewById(R.id.view_Temp);
+            //weatherIconImageView = itemView.findViewById(R.id.view_IconsWeather);
+            //precipitationTextView = itemView.findViewById(R.id.view_WeatherPrecipations);
         }
     }
 } 

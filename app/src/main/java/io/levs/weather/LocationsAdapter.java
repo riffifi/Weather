@@ -56,14 +56,12 @@ public class LocationsAdapter extends RecyclerView.Adapter<LocationsAdapter.Loca
                 ? R.drawable.ph_map_pin 
                 : R.drawable.ph_buildings);
         
-        // Handle item click
         holder.itemView.setOnClickListener(v -> {
             if (clickListener != null && !editMode) {
                 clickListener.onLocationClick(location);
             }
         });
         
-        // Show delete button only in edit mode and for saved locations (not current location)
         boolean showEditControls = editMode && !location.isCurrentLocation();
         holder.deleteButton.setVisibility(showEditControls ? View.VISIBLE : View.GONE);
         holder.deleteButton.setOnClickListener(v -> {
@@ -72,14 +70,11 @@ public class LocationsAdapter extends RecyclerView.Adapter<LocationsAdapter.Loca
             }
         });
         
-        // Show drag handle only in edit mode and for saved locations (not current location)
         holder.dragHandle.setVisibility(showEditControls ? View.VISIBLE : View.GONE);
-        
-        // Set up drag functionality
         holder.dragHandle.setOnTouchListener((v, event) -> {
             if (event.getActionMasked() == MotionEvent.ACTION_DOWN && editMode) {
                 touchHelper.startDrag(holder);
-                return true; // Consume the event to prevent conflicts
+                return true;
             }
             return false;
         });
@@ -103,8 +98,7 @@ public class LocationsAdapter extends RecyclerView.Adapter<LocationsAdapter.Loca
     }
     
     public void moveItem(int fromPosition, int toPosition) {
-        // Validate positions to avoid IndexOutOfBoundsException
-        if (fromPosition < 0 || toPosition < 0 || 
+        if (fromPosition < 0 || toPosition < 0 ||
             fromPosition >= locations.size() || 
             toPosition >= locations.size()) {
             return;

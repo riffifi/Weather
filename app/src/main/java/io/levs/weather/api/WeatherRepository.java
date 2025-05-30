@@ -1,5 +1,7 @@
 package io.levs.weather.api;
 
+
+// TODO: migrate from this to OpenWeatherRepository
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
@@ -160,7 +162,6 @@ public class WeatherRepository {
                                         
                                         @Override
                                         public void onFailure(Call<OpenWeatherCurrentResponse> call, Throwable t) {
-                                            // Still add the location with default values
                                             locations.add(new Location(
                                                 locationId,
                                                 locationName,
@@ -176,7 +177,6 @@ public class WeatherRepository {
                                         }
                                     });
                             } catch (Exception e) {
-                                // Add location with default values in case of error
                                 locations.add(new Location(
                                     locationId,
                                     locationName,
@@ -213,7 +213,7 @@ public class WeatherRepository {
             return;
         }
         
-        // Parse the location key which is in format "lat,lon"
+        // format "lat,lon"
         String[] latLon = locationKey.split(",");
         if (latLon.length != 2) {
             callback.onError("Invalid location key format");
@@ -493,7 +493,6 @@ public class WeatherRepository {
             return;
         }
         
-        // This will now fetch weather data for each location thanks to our updated searchLocationsByCity method
         searchLocationsByCity(cityName, callback);
     }
     
@@ -501,8 +500,6 @@ public class WeatherRepository {
         SharedPreferences prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         
-        // Convert locations to string with a more robust delimiter
-        // Using "###" as a delimiter between locations to avoid conflicts with commas in coordinates
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < locations.size(); i++) {
             Location location = locations.get(i);
@@ -516,7 +513,7 @@ public class WeatherRepository {
             sb.append(location.isCurrentLocation() ? "1" : "0");
             
             if (i < locations.size() - 1) {
-                sb.append("###"); // Use a more distinctive delimiter between locations
+                sb.append("###");
             }
         }
         
@@ -544,21 +541,15 @@ public class WeatherRepository {
                         parseAndAddLocation(locationStr, locations);
                     }
                 } 
-                // Handle legacy format with comma delimiter (might have parsing issues with coordinates)
                 else if (savedLocationsStr.contains(",")) {
-                    // Try to handle the old format, but this might not work correctly for all cases
-                    // First try to parse it as a single location with a comma in the coordinates
                     if (parseAndAddLocation(savedLocationsStr, locations)) {
-                        // Successfully parsed as a single location
                     } else {
-                        // Try the old method of splitting by commas
                         String[] locationStrings = savedLocationsStr.split(",");
                         for (String locationStr : locationStrings) {
                             parseAndAddLocation(locationStr, locations);
                         }
                     }
                 } else {
-                    // Handle single location case
                     parseAndAddLocation(savedLocationsStr, locations);
                 }
             } catch (Exception e) {

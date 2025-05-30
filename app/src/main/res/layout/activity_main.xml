@@ -589,6 +589,7 @@
                     android:drawableTint="@color/text_secondary"
                     android:fontFamily="@font/funneldisplay_family"
                     android:fontWeight="400"
+                    android:gravity="center_vertical"
                     android:paddingHorizontal="16dp"
                     android:paddingVertical="8dp"
                     android:text="OpenWeatherMap"
